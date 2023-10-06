@@ -1,0 +1,12 @@
+Ideas:
+
+    MUSIC:
+    
+        - click sound for button
+        - different music for different scenes
+        - Intro music
+    
+    
+9/13
+- Image size for andy/aa.png fucked up? I don't understand why either like it's infinite
+- Why does it only work for andy.png and aa.png (THE ONLY ORIGINAL FILES)
