@@ -21,7 +21,7 @@ class Button:
         self._prep_message(text)
         
     def _prep_message(self, text):
-        """turn text into image and center on rect"""
+        """Turn text into image and center on rect"""
         self.text_image = self.font.render(text, True, self.text_color, self.button_color)
         self.text_image_rect = self.text_image.get_rect()
         self.text_image_rect.center = self.rect.center
@@ -30,3 +30,11 @@ class Button:
         """Draw blank button and draw message"""
         self.screen.fill(self.button_color, self.rect)
         self.screen.blit(self.text_image, self.text_image_rect)
+        
+    def pop(self):
+        """Replace button with Sugoi?! image and increase size"""
+        # Shrink
+        # Turn text image into sugoi logo
+        # Increase text size 
+        
+        
