@@ -1,4 +1,5 @@
 import pygame.font
+from time import sleep
 
 class Button:
     """A class to manage buttons in SUGOI"""
@@ -33,8 +34,9 @@ class Button:
         
     def pop(self):
         """Replace button with Sugoi?! image and increase size"""
-        # Shrink
+        # Shrink rect       
         # Turn text image into sugoi logo
         # Increase text size 
+        # Dissappear
         
         

@@ -83,6 +83,7 @@ class Sugoi:
         
         if button_clicked and not self.game_running:
             # Somehow add a 'depressed' button image when mousebutton clicked
+            self.play_button.pop() 
             self._start_game()
             
                 
