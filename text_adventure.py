@@ -34,6 +34,29 @@ if answer != "no":
 '''
     print(textwrap.fill(griffin_buts_in))
     print(textwrap.fill(ss.house_description))
+    print(textwrap.fill(ss.gabby_and_avery))
+    options = '''
+    Option 1: “Uh, hi everybody! I’m a big fan, and Avery I really like your nipples.”
+
+    Option 2: “Hi everyone, I’m excited to jam!”
+'''
+    while True:
+        answer = input(textwrap.dedent(options) + "> ")
+        if answer in ['1', '2']:
+            break
+    
+    if answer == '1':
+        print(textwrap.fill(ss.nipples))
+    else:
+        response = f'''
+        “Jam? I thought she was just here to watch.”
+Gabrielle doesn’t even look up from her glasses as she cuts you with her tongue.
+“Well, she is a musician. We could potentially use a {instrument} player” says Griffin. 
+“Everybody in our school is a musician, and our band already seems too full.” She sighs, “But fine, I guess we could see how today goes.”
+
+        '''
+
+        print(textwrap.fill(response))
 
         
 else:

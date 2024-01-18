@@ -25,3 +25,20 @@ andy_description = '''
 house_description = '''
  "House" is a little too back-alley of a word to describe the place you find yourself in. Lathered in deep red carpetry, a tone that complements Andy's hair, and milky white walls with deep green velvety furniture, you're scared even breathing will soil the place's solemnity. At least, your breathing will. It isn't just Andy and Griffin who's been blessed with the attractive-gene in this room. There are still two more demi-gods your neurons are struggling to process. 
 '''
+
+gabby_and_avery = '''
+Lounging on one of the Brunswick armchairs sits Gabrielle LastNameHere, lazily cleaning her glasses. She looks up and gives you a half-nod. A curly blonde lock of her hair falls to slightly obstruct her vision; she blows it away nonchalantly and refocuses on her spectacles. 
+
+The window behind her is half obscured by a finely chiseled form, surveying the view. It may just be the nature of being backlit, but you could swear you could see the outline of every muscle through his shirt. As he turns towards the commotion, you understand why his figure was so exquisitely defined in defiance of the fabric - because he actually wasn’t wearing one at all. 
+
+You think maybe it’s time you said something. 
+
+'''
+
+nipples = '''
+    ‘NIPPLES?!’ OH NO!!! You can feel tears beginning to form behind your eyes because your stupid freudian slip of the tongue can’t even get words straight enough to get through one interaction with the Famous Five without committing a major faux-paus! That’s it, you unwittingly committed social suicide and are officially done for, maybe if you shoot yourself now you can get out of this interaction with some semblance of dignity left.
+“Oh, thanks! I work out.”  
+Huh? Maybe you really will get out of this jam session alive. 
+
+'''
+
