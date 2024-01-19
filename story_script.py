@@ -42,3 +42,18 @@ Huh? Maybe you really will get out of this jam session alive.
 
 '''
 
+intro_practice_room = '''
+You’re led through a long hallway to a luxurious in-house studio, equipped with any lute your fancy could devise. “Yeah, well - make yourself at home” drolls Griffin, throwing his coat on a velvety red accent chair and striding towards the guitar-wall to pick himself an axe for the day. What do you do?
+'''
+
+practice1 = '''
+“Well, don’t make yourself too comfortable.” remarks Gabrielle, “that chair wasn’t made to be sat on.”
+'''
+
+practice2 = '''
+You circle the perimeter of the room and take in your surroundings. Gray-blue carpets stretch out underneath a mahogany drum set, outlined by a gorgeous view of the ocean radiating from a set of sliding glass doors that beckon you outside. 
+'''
+
+practice3 = '''
+“Can I get past ya?” You jump as you realize you’ve blocked the entryway, and scoot sideways to allow Andy through. He smiles as he passes you and picks his way to a mahogany drum set outlined by an ocean view. 
+'''

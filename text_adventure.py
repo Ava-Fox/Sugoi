@@ -16,7 +16,14 @@ print(textwrap.fill(ss.realization))
 prompt = "\n> Do you wanna go? (yes/no) "
 answer = input(prompt)
 
-if answer != "no":
+if answer == "no" or answer == "n":
+   #End game
+    back_out = '''
+        \nYou realize you're too much of a loser to be cool and you drop all of your stuff in your rush to escape, embarrasing yourself thoroughly.
+        '''
+    print(textwrap.dedent(back_out))
+
+else:
     #He takes you to band practice
     band_practice = "\nA section explaining what band practice is like and meeting secondary characters and explaining how hot they are"
     print(textwrap.fill(ss.band_practice))
@@ -55,14 +62,25 @@ Gabrielle doesn’t even look up from her glasses as she cuts you with her tongu
 “Everybody in our school is a musician, and our band already seems too full.” She sighs, “But fine, I guess we could see how today goes.”
 
         '''
-
         print(textwrap.fill(response))
-
-        
-else:
-   #End game
-    back_out = '''
-        \nYou realize you're too much of a loser to be cool and you drop all of your stuff in your rush to escape, embarrasing yourself thoroughly.
-        '''
-    print(textwrap.dedent(back_out))
-
+    
+    print(textwrap.fill(ss.intro_practice_room))
+    options = """
+    1: Sit in the chair
+    2: Explore the room
+    3: Stay put
+"""
+    print(textwrap.fill(options))
+    
+    while True:
+        answer = input("> ")
+        if answer in ['1','2','3']:
+            break
+    
+    if answer == '1':
+        print(textwrap.fill(ss.practice1))
+    elif answer == '2':
+        print(textwrap.fill(ss.practice2))
+    else:
+        print(textwrap.fill(ss.practice3))
+    
