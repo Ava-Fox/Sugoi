@@ -1,5 +1,8 @@
-import textwrap
+import textwrap # Format text
+import bext # Change terminal colors
 import story_script as ss 
+
+bext.fg("purple")
 
 #Prompt user if wanna play/what your name is 
 print(textwrap.fill(ss.intro))
@@ -29,6 +32,8 @@ else:
     print(textwrap.fill(ss.band_practice))
 
     instrument = input("\n> What do you play? ")
+    
+    # Section that's too long: 
     andy_meet = f'''
     'Ah, the {instrument}! What lovely tunes the {instrument} produces!', he says while staring directly into your soul. 'I don't believe we've met before, I'm Andy." You've definitely met before, but you tell him your name anyways.
 '''
@@ -71,6 +76,7 @@ Gabrielle doesn’t even look up from her glasses as she cuts you with her tongu
     3: Stay put
 """
     print(textwrap.fill(options))
+    
     
     while True:
         answer = input("> ")
