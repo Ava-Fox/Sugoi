@@ -17,6 +17,7 @@ def intro():
     _choose_instrument()
     _get_name()
     _invite_to_practice()
+    print("You made it to practice")
 
 def get_player_input():
     bext.fg("cyan")
