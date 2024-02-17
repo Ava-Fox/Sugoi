@@ -2,26 +2,34 @@ import sys
 import bext
 import textwrap as tw
 from time import sleep
+from troll import Troll, Gabrielle
 
 bext.fg("purple") #Make text purple
 
 # I'll hold information about the player here
 player = {}
+troll = Troll()
+gabrielle = Gabrielle()
 
-# Hello world for good luck
-def hello():
-    print("hello, world")
+def run_game():
+    """Where main game logic goes"""
+    troll.swing_blade()
+    intro()
+    gabrielle.bitchy_remarks(player['name'])
+    practice()
+    print(f"Player: {player}")
 
 def intro():
     """Introduce player, gather name, choose instrument"""
     _choose_instrument()
     _get_name()
     _invite_to_practice()
-    print("You made it to practice")
 
 def get_player_input():
+    """Change player input color and return answer"""
     bext.fg("cyan")
-    answer = input("> ")
+    answer = input("\n> ")
+    print()
     bext.fg("purple")
     return answer
     
@@ -55,14 +63,14 @@ def _get_name():
     player['name'] = name.title()
 
 def _invite_to_practice():
-    """  """
-    prompt = f"Well, I like your stuff {player['name']}. What do you say about coming over to my band's next practice to jam?"
+    """See if player wants to continue game or not"""
+    prompt = f'''"Well, I like your stuff {player['name']}. What do you say about coming over to my band's next practice to jam?"\n'''
     prompt2 = '''
     You realize who you're talking to. Reality shifts and everything comes into focus as you find yourself conversing with the one and only Griffen R., the hottest, most talented, most popular guitarist in the school's most beloved band.
-'''
+    '''
     print(tw.fill(prompt))
     print(tw.fill(prompt2))
-    print("Would you like to go? Y/N")
+    print("\nWould you like to go? (Y/N)")
     while True:
         answer = get_player_input().upper()
         options = ['Y','N']
@@ -70,13 +78,16 @@ def _invite_to_practice():
             break
     if answer == 'N':
         prompt = '''
-        You realize you're too much of a loser to be cool and you drop all of your stuff in your rush to escape, embarrasing yourself thoroughly.
+    You realize you're too much of a loser to be cool and you drop all of your stuff in your rush to escape, embarrasing yourself thoroughly.
         '''
-        sleep(2)
+        # Pause for dramatic effect
+        sleep(1)
         print(tw.fill(prompt))  
         sys.exit()
 
+def practice():
+    """Where practice sequence goes"""
+    print("You made it to practice")
 
 if __name__ == "__main__":
-    intro()
-    print(player)
+    run_game()
