@@ -4,6 +4,9 @@ import textwrap as tw
 from time import sleep
 from troll import Troll, Gabrielle
 
+#import uuid
+#uuid.uuid4() Create a uuid
+
 bext.fg("purple") #Make text purple
 
 # I'll hold information about the player here
