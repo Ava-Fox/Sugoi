@@ -4,6 +4,8 @@ import textwrap as tw
 from time import sleep
 from troll import Troll, Gabrielle
 
+# ncurses: graphical interfaces in term
+
 #import uuid
 #uuid.uuid4() Create a uuid
 
@@ -163,6 +165,10 @@ Someone remarks, “Two bassists? Awkward. I guess we could make it work…” A
             p = '''
 “Nice, a flutist! We need one for our next album!” He smiles, stealing your breath away, because he's left you no choice but to look at his magnificent face. Delicate, faded freckles speckle his cheeks, shadowed by brilliant blades of bright red hair. Proportions nothing short of perfect; this dude certainly is symmetrical.
 '''  
+    else:
+        p = '''
+Generic remark here
+'''
     print(tw.fill(p))
        
 def _survey_room():
@@ -176,30 +182,24 @@ solemnity.
 '''
     print(tw.fill(p))
     p = '''
-1. Continue looking.
+1. Who's in the chair?
+2. Who's at the window?
 2. Back to conversation.
 '''
     print(p)
-    options = ['1', '2']
+    options = ['1', '2', '3']
     choice = player_choice(options)
     if choice == '1':
         p = '''
-1. Who's in the chair?
-2. Who's at the window?
-''' 
-        print(p)
-        choice = player_choice(options)
-        if choice == '1':
-            p = '''
 Lounging on one of the Brunswick armchairs sits Gabrielle LastNameHere, lazily cleaning her glasses. She looks up and gives you a half-nod. A curly blonde lock of her hair falls to slightly obstruct her vision; she blows it away nonchalantly and refocuses on her spectacles. 
 '''
-        else:
-            p = '''
+    elif choice == '2':
+        p = '''
 The window is half obscured by a finely chiseled form, surveying the view. It may just be backlighting, but you could swear you could make out the outline of every single muscle through his shirt. As he turns towards the commotion, you understand why his figure was so exquisitely defined - because he actually wasn’t wearing one at all.  
 '''
-        print(tw.fill(p))
     else:
-        print("BACK TO CONVO")
+        p = "BACK TO CONVO"
+    print(tw.fill(p))
 
 def player_choice(options):
     while True:
