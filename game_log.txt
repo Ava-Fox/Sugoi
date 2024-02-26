@@ -6,6 +6,28 @@ Ideas:
         - different music for different scenes
         - Intro music
     
+SAMPLE JSON:
+{
+  "1": {
+    "prompt": "How are you?",
+    "answers": {
+      "I'm good": 2
+    }
+  },
+  "2": {
+    "prompt": "OK",
+    "answers": {
+      "How are you?": 3,
+      "Goodbye": 4
+    }
+  },
+  "3": {
+    "prompt": "I'm good, thank's for asking!",
+    "answers": {
+      "Goodbye": null
+    }
+  }
+}
     
 9/13
 - Image size for andy/aa.png fucked up? I don't understand why either like it's infinite
